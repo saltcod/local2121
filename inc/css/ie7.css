@@ -1,0 +1,7 @@
+body.home #main { margin-top: 0; }
+
+body.home.logged-in .top-bar { margin-top: 0; }
+
+body.home header#masthead { position: relative; }
+
+body.page-venue #content { border-bottom: 4px solid red; }

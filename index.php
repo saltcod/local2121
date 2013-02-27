@@ -16,7 +16,7 @@ get_header(); ?>
 
 <div id="primary" class="content-area wrap group">
 
-	<?php if (is_page( 'questions' ) ) {
+	<?php if ( is_page( 'questions' ) || is_page( 'information' )) {
 		get_sidebar();
 	}
 	?>

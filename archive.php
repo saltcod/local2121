@@ -8,23 +8,30 @@
  * @since waterstreet 1.0
  */
 
-get_header(); ?>
+get_header();  ?>
 
-		<section id="primary" class="content-area">
-			<div id="content" class="site-content" role="main">
 
-			<?php if ( have_posts() ) : ?>
+<div id="primary" class="content-area wrap group">
+	<?php if ( is_page( 'questions' ) || is_page( 'information' ) || is_archive() ) {
+			get_sidebar();
+		}
+	?>
+	
 
-				<header class="page-header">
-					<h1 class="page-title">
-						<?php
-							if ( is_category() ) {
-								printf( __( 'Category Archives: %s', 'waterstreet' ), '<span>' . single_cat_title( '', false ) . '</span>' );
+	<div id="content" class="site-content group" role="main">
 
-							} elseif ( is_tag() ) {
-								printf( __( 'Tag Archives: %s', 'waterstreet' ), '<span>' . single_tag_title( '', false ) . '</span>' );
+		<?php if ( have_posts() ) : ?>
 
-							} elseif ( is_author() ) {
+		<header class="page-header">
+			<h1 class="page-title">
+				<?php
+				if ( is_category() ) {
+					printf( __( 'Category Archives: %s', 'waterstreet' ), '<span>' . single_cat_title( '', false ) . '</span>' );
+
+				} elseif ( is_tag() ) {
+					printf( __( 'Tag Archives: %s', 'waterstreet' ), '<span>' . single_tag_title( '', false ) . '</span>' );
+
+				} elseif ( is_author() ) {
 								/* Queue the first post, that way we know
 								 * what author we're dealing with (if that is the case).
 								*/
@@ -49,9 +56,9 @@ get_header(); ?>
 								_e( 'Archives', 'waterstreet' );
 
 							}
-						?>
-					</h1>
-					<?php
+							?>
+						</h1>
+						<?php
 						if ( is_category() ) {
 							// show an optional category description
 							$category_description = category_description();
@@ -64,13 +71,13 @@ get_header(); ?>
 							if ( ! empty( $tag_description ) )
 								echo apply_filters( 'tag_archive_meta', '<div class="taxonomy-description">' . $tag_description . '</div>' );
 						}
-					?>
-				</header><!-- .page-header -->
+						?>
+					</header><!-- .page-header -->
 
-				<?php waterstreet_content_nav( 'nav-above' ); ?>
+					<?php waterstreet_content_nav( 'nav-above' ); ?>
 
-				<?php /* Start the Loop */ ?>
-				<?php while ( have_posts() ) : the_post(); ?>
+					<?php /* Start the Loop */ ?>
+					<?php while ( have_posts() ) : the_post(); ?>
 
 					<?php
 						/* Include the Post-Format-specific template for the content.
@@ -78,20 +85,20 @@ get_header(); ?>
 						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 						 */
 						get_template_part( 'content', get_post_format() );
-					?>
+						?>
 
-				<?php endwhile; ?>
+					<?php endwhile; ?>
 
-				<?php waterstreet_content_nav( 'nav-below' ); ?>
+					<?php waterstreet_content_nav( 'nav-below' ); ?>
 
-			<?php else : ?>
+				<?php else : ?>
 
 				<?php get_template_part( 'no-results', 'archive' ); ?>
 
 			<?php endif; ?>
 
-			</div><!-- #content .site-content -->
-		</section><!-- #primary .content-area -->
+		</div><!-- #content .site-content -->
+	</section><!-- #primary .content-area -->
 
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+
+	<?php get_footer(); ?>

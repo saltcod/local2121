@@ -36,24 +36,33 @@ get_header(); ?>
 </div>
 
 
-<div class="questions-and-answers">
+<div class="questions-and-answers group">
 	<h2 class="section-title">Questions & Answers</h2>
+	<p> </p>
+	<sidebar class="ask-the-executive group">
+		<h3>Ask the executive</h3>
 
-	<?php
-	$questions = new WP_Query( array( 
-		'post_type' => 'questions', 
-		'posts_per_page' => 20, 
-		'order'=>'DESC' 
-		));
+		<p>Have a question for your executive?</p>
+		<p><a href="#">Ask it here &rarr;</a></p>
+	</sidebar>	
+	
+	<div class="question-container">
+		<?php
+		$questions = new WP_Query( array( 
+			'post_type' => 'questions', 
+			'posts_per_page' => 20, 
+			'order'=>'DESC' 
+			));
 
-		?>
-		<?php while ($questions->have_posts()) : $questions->the_post(); ?>
-		<div class="question">
-			<h2 class="title"><?php the_title(); ?></h2>
-			<?php waterstreet_posted_on(); ?>
-			<?php the_content(); ?>
-		</div>
-	<?php endwhile; ?>
+			?>
+			<?php while ($questions->have_posts()) : $questions->the_post(); ?>
+			<div class="question">
+				<h2 class="title"><?php the_title(); ?></h2>
+				<?php waterstreet_posted_on(); ?>
+				<?php the_content(); ?>
+			</div>
+		<?php endwhile; ?>
+	</div>
 
 
 

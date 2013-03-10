@@ -191,7 +191,7 @@ header#masthead {
 }
 #content {
   background: #fff;
-  padding: 0 25px;
+  padding: 25px;
   position: relative;
   min-height: 500px;
 }
@@ -210,9 +210,8 @@ article {
   float: left;
   background: #fff;
   width: 27%;
-  border-left: 1px solid #ccc;
   margin-right: 25px;
-  padding: 0 25px;
+  padding: 25px 25px 0;
 }
 /* =Type elements
 ---------------------------------------------------------------- */
@@ -467,9 +466,12 @@ body.home .welcome-message {
   color: #fff;
   padding: .5em 1em;
 }
+.questions-and-answers sidebar p {
+  font: 1em "freight-sans-pro", 'Helvetica Neue', Helvetica;
+}
 .questions-and-answers sidebar h3 {
   font-size: 1.5em;
-  color: #86e4f6;
+  color: #9ee9f8;
 }
 .questions-and-answers sidebar a {
   color: #fff;
@@ -478,9 +480,20 @@ body.home .welcome-message {
 .questions-and-answers sidebar a:hover {
   border-bottom: 1px solid #fff;
 }
-.questions-and-answers .question-container {
+.questions-and-answers h2.title {
+  color: #10b4d3;
+}
+.question-container {
   float: left;
   width: 65%;
+}
+.question-container .question {
+  border-top: 1px solid #ccc;
+  padding-top: 25px;
+}
+.question-container .question:first-child {
+  border: none;
+  padding-top: 0;
 }
 time {
   font-style: italic;
@@ -489,6 +502,15 @@ time {
 }
 /* =Content
 ---------------------------------------------------------------- */
+.post-thumbnail {
+  float: left;
+  width: 25%;
+  margin-right: 25px;
+}
+.post-thumbnail img {
+  max-width: 100%;
+  height: auto;
+}
 .hentry {
   margin: 0 0 1.5em;
 }
@@ -513,8 +535,34 @@ time {
   clear: both;
   margin: 0 0 1.5em;
 }
-/* =Front page
+.tag-links {
+  color: #10b4d3;
+}
+.tag-links a {
+  color: #10b4d3;
+}
+footer.entry-meta {
+  padding-bottom: 15px;
+}
+/* =Archive / News Pages
 ---------------------------------------------------------------- */
+body.archive #content {
+  background: none;
+  padding-top: 0;
+}
+body.archive .page-header {
+  background: white;
+  padding: 25px 25px 5px;
+  margin-bottom: 25px;
+}
+body.archive article {
+  background: white;
+  padding: 25px;
+}
+body.archive article footer.entry-meta {
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+}
 /* =A simple grid
 ---------------------------------------------------------------- */
 .block {
@@ -911,6 +959,21 @@ textarea {
   clear: both;
   float: left;
   font-size: 12px;
+}
+/* =Extras and Helpers
+-------------------------------------------------------------- */
+.edit-link {
+  background: #10b4d3;
+  padding: 1px 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.edit-link a {
+  color: white;
 }
 /* =Group/Clearfix
 -------------------------------------------------------------- */

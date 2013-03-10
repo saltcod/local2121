@@ -136,11 +136,11 @@ header#masthead {
 
 #content {
 	background: #fff;
-	padding: 0 25px;
+	padding: 25px;
 	position: relative;
 	min-height: 500px;
- 	body.home & { padding: 0; background: none; }
- 	body.sidebar & { 
+	body.home & { padding: 0; background: none; }
+	body.sidebar & { 
 		float: left; 
 		width: 650px; 
 	}
@@ -155,9 +155,8 @@ article {
 	float: left;
 	background: #fff;
 	width: 27%;
-	border-left: 1px solid #ccc;
 	margin-right: 25px;
-	padding: 0 25px;
+	padding: 25px 25px 0;
 }
 
 footer#colophon {}
@@ -429,7 +428,11 @@ body.home {
 		background: darken(@blue, 5%);
 		color: #fff;
 		padding: .5em 1em;
-		h3 { font-size: 1.5em; color: lighten(@blue, 30%)}
+
+		p { font: 1em @sans; }
+		
+		h3 { font-size: 1.5em; color: lighten(@blue, 35%)}
+
 		a { 
 			color: #fff;
 			border-bottom: 1px solid lighten(@blue, 40%);
@@ -438,11 +441,19 @@ body.home {
 			}
 		}
 	}
-	.question-container {
-		float: left;
-		width: 65%;
-	}
+	h2.title { color:  @blue; }
+	
 }
+.question-container {
+	float: left;
+	width: 65%;
+		.question {
+			border-top: 1px solid #ccc;
+			padding-top: 25px;
+				&:first-child{ border:none; padding-top: 0; } 
+		}
+}
+
 
 
 time { 
@@ -458,7 +469,15 @@ time {
 
 /* =Content
 ---------------------------------------------------------------- */
-
+.post-thumbnail{
+	float: left;
+	width: 25%;
+	margin-right: 25px;
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
 .sticky {
 }
 .hentry {
@@ -485,9 +504,39 @@ time {
 	clear: both;
 	margin: 0 0 1.5em;
 }
+.tag-links{
+	color: @blue;
+	a {color: @blue;}
 
-/* =Front page
+}
+
+footer.entry-meta{
+	padding-bottom: 15px;
+}
+
+
+
+/* =Archive / News Pages
 ---------------------------------------------------------------- */
+body.archive {
+	#content { background: none; padding-top: 0; }
+	.page-header{
+		background: white;
+		padding: 25px 25px 5px;
+		margin-bottom: 25px;
+	}
+	article{
+		background: white;
+		padding: 25px;
+			footer.entry-meta { 
+				border-top: 1px solid #ccc;
+				padding-top: 15px;
+			}
+	}
+}
+
+
+
 
 
 
@@ -832,6 +881,17 @@ textarea {
 	}
 	.site-by { clear: both; float: left; font-size: 12px; }
 
+}
+
+
+/* =Extras and Helpers
+-------------------------------------------------------------- */
+
+.edit-link {
+	background: @blue;
+	padding: 1px 10px;
+	.rounded(4px);
+	a{color: white;}
 }
 
 

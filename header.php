@@ -74,8 +74,9 @@
 				</div>
 			</div>
 
-			<?php if( is_home() ):?>
+			<?php if( is_front_page() ):?>
 			<div class="wrap">
+				<img class="cep-logo" src="<?php echo get_template_directory_uri();?>/images/cep-logo-2121.png">
  				<div class="welcome-message">
 					North America's first unionized  offshore oil production facilities
 				</div>

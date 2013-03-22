@@ -11,7 +11,6 @@
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php waterstreet_posted_on(); ?>
 		</div> 
 	<?php endif; ?>
 </header> 
@@ -31,6 +30,7 @@
 <?php endif; ?>
 
 <footer class="entry-meta">
+			<?php waterstreet_posted_on(); ?> 
 	<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
 	<?php
 	/* translators: used between list items, there is a space after the comma */

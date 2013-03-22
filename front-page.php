@@ -18,21 +18,33 @@ get_header(); ?>
 	<div id="content" class="site-content group" role="main">
 
 
-		<div class="latest-news">
-			<h2 class="section-title">Latest News</h2>
+		<div class="latest-news group">
+			<div class="left-side">	
+				<h2 class="section-title">Latest News</h2>
+				<p> </p>
+				<sidebar class="ask-the-executive group">
+					<h3>Sign up for updates</h3>
 
-			<?php query_posts('showposts=3'); if (have_posts()) : while (have_posts()) : the_post(); 
-			get_template_part( 'content', get_post_format() );
-			?>
+					<p>Have a question for your executive?</p>
+					<p><a href="#">Ask it here &rarr;</a></p>
+				</sidebar>	
+				
+			</div>
+			<div class="right-side">
+				<div class="latest-news-list group">
+					<?php query_posts('showposts=3'); if (have_posts()) : while (have_posts()) : the_post(); 
+					get_template_part( 'content', get_post_format() );
+					?>
 
-		<?php endwhile; ?>
+				<?php endwhile; ?>
 
-	<?php else : ?>
+			<?php else : ?>
 
-	<?php get_template_part( 'no-results', 'index' ); ?>
+			<?php get_template_part( 'no-results', 'index' ); ?>
 
-<?php endif; ?>
-
+		<?php endif; ?>
+	</div>
+</div>
 </div>
 
 
@@ -66,17 +78,13 @@ get_header(); ?>
 
 
 
-
-
-
-
 </div> <!-- end.questions-and-answers -->
 
 <div class="collective-agreements group">
 	<h2 class="section-title">Collective Agreements</h2>
 	<div class="ca-right-side">
-		<img src="<?php echo get_template_directory_uri();?>/images/terra-nova-collective-agreement@2x.png" alt="">
-		<img src="<?php echo get_template_directory_uri();?>/images/hibernia-collective-agreement@2x.png" alt="">
+		<a href="#"><img src="<?php echo get_template_directory_uri();?>/images/terra-nova-collective-agreement@2x.png" alt=""></a> 
+		<a href="#"><img src="<?php echo get_template_directory_uri();?>/images/hibernia-collective-agreement@2x.png" alt=""></a>
 	</div>
 
 </div>

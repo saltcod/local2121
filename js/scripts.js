@@ -1,4 +1,8 @@
 jQuery(function($){
+//Switch the background image
+
+$.backstretch("http://localhost:8888/ceplocal2121/wp-content/themes/ceplocal2121/images/atlantic-ocean.png");
+
 
  //No margin on the last nav list item
  $('.main-navigation li').last().addClass('last');

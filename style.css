@@ -36,7 +36,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: "freight-sans-pro", 'Helvetica Neue', Helvetica;
+  font-family: "Open Sans", 'Helvetica Neue', Helvetica;
   font-size: 1em;
   line-height: 1.5;
 }
@@ -48,7 +48,7 @@ h4,
 h5,
 h6 {
   clear: both;
-  font-family: "freight-sans-pro", 'Helvetica Neue', Helvetica;
+  font-family: "Open Sans", 'Helvetica Neue', Helvetica;
   margin-top: 0;
   font-weight: 600;
   line-height: 1.1;
@@ -248,8 +248,8 @@ hgroup {
 }
 .site-title {
   float: left;
-  font-size: 1.8em;
-  font-weight: 500;
+  font-size: 1.6em;
+  font-weight: 600;
   text-transform: uppercase;
   display: inline-block;
   margin: 0;
@@ -290,7 +290,7 @@ hgroup {
 }
 .box-office span {
   font-weight: bold;
-  font-family: "freight-sans-pro", 'Helvetica Neue', Helvetica;
+  font-family: "Open Sans", 'Helvetica Neue', Helvetica;
 }
 .box-office span.phone {
   padding-left: 15px;
@@ -496,7 +496,7 @@ body.home .cep-logo {
   padding: .5em 1em;
 }
 .latest-news sidebar p {
-  font: 1em "freight-sans-pro", 'Helvetica Neue', Helvetica;
+  font: 1em "Open Sans", 'Helvetica Neue', Helvetica;
 }
 .latest-news sidebar h3 {
   font-size: 1.5em;
@@ -529,7 +529,7 @@ body.home .cep-logo {
   padding: .5em 1em;
 }
 .questions-and-answers sidebar p {
-  font: 1em "freight-sans-pro", 'Helvetica Neue', Helvetica;
+  font: 1em "Open Sans", 'Helvetica Neue', Helvetica;
 }
 .questions-and-answers sidebar h3 {
   font-size: 1.5em;
@@ -957,7 +957,7 @@ textarea {
 #colophon {
   color: #fff;
   padding: 25px 25px 10px;
-  font-family: "freight-sans-pro", 'Helvetica Neue', Helvetica;
+  font-family: "Open Sans", 'Helvetica Neue', Helvetica;
   position: relative;
   z-index: 5;
 }
@@ -996,7 +996,7 @@ textarea {
   width: 40%;
 }
 #colophon h2 {
-  font-family: "freight-sans-pro", 'Helvetica Neue', Helvetica;
+  font-family: "Open Sans", 'Helvetica Neue', Helvetica;
   font-size: 18px;
 }
 #colophon h3 {
@@ -1034,7 +1034,7 @@ textarea {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  font: 11px "Lucida Grande", "freight-sans-pro", 'Helvetica Neue', Helvetica;
+  font: 11px "Lucida Grande", "Open Sans", 'Helvetica Neue', Helvetica;
   background: #10b4d3;
   color: white;
   margin-left: 50px;

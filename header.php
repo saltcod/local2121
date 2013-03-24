@@ -48,9 +48,7 @@
 <![endif]-->
 
 
-<script type="text/javascript" src="//use.typekit.net/ocs7exa.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-<link href='http://fonts.googleapis.com/css?family=Dawning+of+a+New+Day' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
 
 
 

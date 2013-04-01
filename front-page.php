@@ -27,9 +27,7 @@ get_header(); ?>
 					
 					<?php the_widget('Jetpack_Subscriptions_Widget'); ?>
 
-					<p>Have a question for your executive?</p>
-					<p><a href="#">Ask it here &rarr;</a></p>
-				</sidebar>	
+ 				</sidebar>	
 				
 			</div>
 			<div class="right-side">

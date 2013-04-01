@@ -24,6 +24,8 @@ get_header(); ?>
 				<p> </p>
 				<sidebar class="ask-the-executive group">
 					<h3>Sign up for updates</h3>
+					
+					<?php the_widget('jetpack-subscriptions'); ?>
 
 					<p>Have a question for your executive?</p>
 					<p><a href="#">Ask it here &rarr;</a></p>

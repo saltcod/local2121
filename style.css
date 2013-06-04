@@ -164,7 +164,7 @@ header#masthead {
   background: linear-gradient(to right, #10b4d3 0%, #096374 100%);
   /* W3C */
 
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='@blue', endColorstr='darken(@blue, 20%)', GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@blue', endColorstr='darken(@blue, 20%)', GradientType=1);
   /* IE6-9 */
 
   -webkit-box-shadow: 11px 11px 10px rgba(0, 0, 0, 0.25);
@@ -838,8 +838,6 @@ textarea {
   /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
 
   vertical-align: baseline;
-  /* Improves appearance and consistency in all browsers */
-
   *vertical-align: middle;
   /* Improves appearance and consistency in all browsers */
 
@@ -871,7 +869,6 @@ input[type="submit"] {
   -webkit-appearance: button;
   /* Corrects inability to style clickable 'input' types in iOS */
 
-  font-size: 12px;
   font-size: 12px;
   line-height: 1;
   padding: 5px 10px;
@@ -988,7 +985,7 @@ textarea {
   background: linear-gradient(to right, #10b4d3 0%, #096374 100%);
   /* W3C */
 
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='@blue', endColorstr='darken(@blue, 20%)', GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@blue', endColorstr='darken(@blue, 20%)', GradientType=1);
   /* IE6-9 */
 
   -webkit-box-shadow: 11px 11px 10px rgba(0, 0, 0, 0.25);
@@ -1027,6 +1024,12 @@ textarea {
   clear: both;
   float: left;
   font-size: 12px;
+}
+#colophon .social {
+  border-bottom: none;
+}
+#colophon .social img {
+  width: 35px;
 }
 /* =Extras and Helpers
 -------------------------------------------------------------- */

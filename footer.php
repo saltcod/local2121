@@ -15,18 +15,25 @@
 		<div class="wrap">
 				<div class="block one-third">
 					<h2>Contact us</h2>
+					 
+						<a class="social"  href="http://gmail.com"><img src="<?php echo get_template_directory_uri();?>/images/gmail.jpg" alt="gmail">	</a>
+						<a class="social" href="http://google.com"><img src="<?php echo get_template_directory_uri();?>/images/google.jpg" alt="google">	</a>
+						<a class="social" href="http://facebook.com"><img src="<?php echo get_template_directory_uri();?>/images/facebook.jpg" alt="facebook">	<br></a>
+						<a class="social" href="http://hotmail.com"><img src="<?php echo get_template_directory_uri();?>/images/hotmail.jpg" alt="hotmail">	</a>
+						<a class="social" href="http://yahoo.ca"><img src="<?php echo get_template_directory_uri();?>/images/yahoo.jpg" alt="yahoo">	</a>
+					 
 				</div>
 									
 				<div class="block one-third">
 					<span class="clear"><i class="icon-phone"></i>709-753-7564</span>
-					<span class="clear"><i class="icon-fax machine"></i>709-726-4538</span>			
+					<span class="clear"><i class="icon-print"></i>709-726-4538</span>			
  					<span class="clear"><i class="icon-envelope"></i><a href="mailto:office@2121.com">cep410.2121@gmail.com</a></span>						
 				</div>
 				
 				<div class="block one-third">
-					330A Portugal Cove Place</p>
-					St. John's, NL</p>
-					A1A 4Y5</p>
+					330A Portugal Cove Place<br>
+					St. John's, NL<br>
+					A1A 4Y5<br>
 
 				</div>
 		

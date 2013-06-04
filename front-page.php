@@ -83,8 +83,8 @@ get_header(); ?>
 <div class="collective-agreements group">
 	<h2 class="section-title">Collective Agreements</h2>
 	<div class="ca-right-side">
-		<a href="#"><img src="<?php echo get_template_directory_uri();?>/images/terra-nova-collective-agreement@2x.png" alt=""></a> 
-		<a href="#"><img src="<?php echo get_template_directory_uri();?>/images/hibernia-collective-agreement@2x.png" alt=""></a>
+		<a href="http://ceplocal-2121.ca/wp-content/uploads/2013/05/Collective-Agreement_Expiry_Sept_30_2013.pdf"><img src="<?php echo get_template_directory_uri();?>/images/terra-nova-collective-agreement@2x.png" alt=""></a> 
+		<a href="http://ceplocal-2121.ca/wp-content/uploads/2013/05/HIBERNIA-CBA_2009-2013.pdf"><img src="<?php echo get_template_directory_uri();?>/images/hibernia-collective-agreement@2x.png" alt=""></a>
 	</div>
 
 </div>

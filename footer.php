@@ -18,14 +18,15 @@
 				</div>
 									
 				<div class="block one-third">
-					<span class="clear"><i class="icon-phone"></i>709-555-5555</span>			
- 					<span class="clear"><i class="icon-envelope"></i><a href="mailto:office@2121.com">office@2121.com</a></span>			
- 					<span class="clear"><i class="icon-map-marker"></i>Bell's Turn</span>			
+					<span class="clear"><i class="icon-phone"></i>709-753-7564</span>
+					<span class="clear"><i class="icon-fax machine"></i>709-726-4538</span>			
+ 					<span class="clear"><i class="icon-envelope"></i><a href="mailto:office@2121.com">cep410.2121@gmail.com</a></span>						
 				</div>
 				
 				<div class="block one-third">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut iaculis ligula. Mauris dignissim felis ut diam congue eu dapibus leo pellentesque. </p>
-
+					330A Portugal Cove Place</p>
+					St. John's, NL</p>
+					A1A 4Y5</p>
 
 				</div>
 		

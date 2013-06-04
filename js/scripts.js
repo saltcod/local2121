@@ -1,7 +1,7 @@
 jQuery(function($){
 //Switch the background image
 
-$.backstretch("http://ceplocal2121.waterstreetgm.org/wp-content/themes/local2121/images/atlantic-ocean.png");
+$.backstretch("http://ceplocal-2121.ca/wp-content/themes/local2121/images/atlantic-ocean.png");
 
 
  //No margin on the last nav list item

@@ -55,7 +55,7 @@ get_header(); ?>
 		<h3>Ask the executive</h3>
 
 		<p>Have a question for your executive?</p>
-		<p><a href="#">Ask it here &rarr;</a></p>
+		<p><a href="http://ceplocal-2121.ca/ask-a-question/">Ask it here &rarr;</a></p>
 	</sidebar>	
 	
 	<div class="question-container">
